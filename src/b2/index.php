@@ -36,7 +36,7 @@ switch ($action) {
       header('Location: index.php');
       exit;
     }
-    echo $twig->render('edit.twig', ['user' => $user]);
+    echo $twig->render('edit.twig.html', ['user' => $user]);
     break;
   case 'delete':
     $id = $_GET['id'];

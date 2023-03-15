@@ -1,0 +1,19 @@
+{% block content %}
+<form method="POST">
+  <label for="name">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    value="{{user.name ? user.name : ''}}"
+  />
+  <label for="email">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    value="{{user.name ? user.email : ''}}"
+  />
+  <input type="submit" value="Edit User" />
+</form>
+{% endblock %}
